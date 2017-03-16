@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!-- 让IE切换解析模式 （内核）-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 媒体查询  视频端口视图输出 缩放倍数为一倍 置为1并且
+    如果删了没有响应式
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- 兼容IE9一下版本 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    * {
+      color: gray;
+    }
+    .navbar {
+      background-color: black;
+
+    }
+    .d {
+      background-image: url('image/1.jpeg');
+    }
+    #box {
+      background-image: url("image/1.jpeg");
+    }
+    #box1 {
+      background-color: black;
+    }
+    .list-group-item {
+      background-color: lightgray;
+      /*opacity: 0.5;*/
+     
+    }
+
+    #box3 {
+      font-size: 30px;
+      color: lightblue;
+    }
+
+    #login:hover {
+      color: lightgray;
+    }
+
+   /* #deng {
+      width: 300px;
+      height: 200px;
+      margin-top: 50px;
+      margin-left: 200px;
+      border: 1px solid gray;
+      display: none;
+      color: white;
+      position: relative;
+     
+    }*/
+    #h {
+      text-align: center;
+      position: absolute;
+      left: 100px;
+      /*top: 10px;*/
+    }
+
+    #close {
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      left: 270px;
+      cursor: pointer;
+    }
+   /* #user {
+      position: absolute;
+      left: 10px;
+      top: 20px;
+    }*/
+    .p {
+      position: absolute;
+      left: 10px;
+      top: 70px;
+    }
+    .p1 {
+      position: absolute;
+      left: 10px;
+      top: 110px;
+    }
+    .b {
+      position: absolute;
+      left: 150px;
+      top: 150px;
+    }
+    .b a{
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+    }
+
+    html,body{ margin: 0; height: 100%; background-color: #151515; }
+    body{ background-image: url(image/1.jpeg); background-position: center center; background-repeat: no-repeat; background-color: #0D0B18; }
+    #snowBox{position: relative;width: 100%;height: 3000px;margin: 0 auto;/*background: #33EAE8;*/overflow: hidden;}
+    .snowFlake{position: absolute;}
+    </style>
+  </head>
+  <body>
+  <div class="d">
+  <div id="snowBox">
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="s.html">闪光摄影</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+        <li><a href="a/index.html">品牌</a></li>
+        <li><a href="#">作品</a></li>
+
+        
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="dz/login.html" id="login">登录</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">风格 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">清新</a></li>
+            <li><a href="#">唯美</a></li>
+            <li><a href="#">写真</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">关于</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+</nav>
+   
+<!-- <div class="container" id="box">
+  <div id="deng">
+    <h3 id="h">会员登录</h3>
+    <span id="close">❌</span>
+   <div class="p">用户名：<input id="user" type="text" maxlength="6" placeholder="填写用户名" >
+   </div> 
+    <br>
+    <br>
+    <div class="p1">密&nbsp;&nbsp;&nbsp;码：<input id="pass" type="password" maxlength="6" placeholder="填写密码" >
+    </div>
+    <br>
+    <br>
+    <div class="b">
+    <a href="#" id="d">登录</a>
+    <a href="#" id="z">注册</a>
+    </div>
+  </div> -->
+      <!-- 行 -->
+        <div class="row">
+        <!-- 超出12份自动换行 -->
+        <!-- 向前偏移两个 col-lg-offset-2  lg,md,sm,xs-->
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+
+        <div class="list-group" id="box1">
+  <a href="#" class="list-group-item active">
+    限时活动
+  </a>
+  <a href="相册/index.html" class="list-group-item" style="background-color:#0991db">最新样片 点我</a>
+  <a href="#" class="list-group-item">热门活动</a>
+  <a href="#" class="list-group-item">每日更新</a>
+  <a href="#" class="list-group-item">新闻动态</a>
+    <a href="#" class="list-group-item">限时活动</a>
+  <a href="#" class="list-group-item">最新样片</a>
+  <a href="#" class="list-group-item">热门活动</a>
+  <a href="#" class="list-group-item">联系我们</a>
+  <a href="#" class="list-group-item">加入我们</a>
+
+</div>
+ 
+</div>
+          <!-- <div class="row"> -->
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+ <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+ <div id="box3"><p>闪光摄影</p></div>
+
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="image/2.jpeg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="image/3.jpeg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+        <div class="item">
+      <img src="image/4.jpeg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+          </div>
+        </div>
+      </div>
+
+
+
+<div class="row">
+  <div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="image/1.png" alt="...">
+      <div class="caption">
+        <h3>心情</h3>
+        <p>让你不能忘记的图片；唯美图片原来是指图片设计者,使用的比较好的素材用的语言；其含义涵括各个图片种类,包括单一的颜色的和黑白等等的只要可以让人产生美感都可以属于美图的类别， 美是一种发自内心的感觉 有内在美和外观美。
+</p>
+        <p><a href="#" class="btn btn-primary" role="button">收藏</a> <a href="#" class="btn btn-default" role="button">点赞</a></p>
+      </div>
+    </div>
+  </div>
+
+   <div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="image/5.jpeg" alt="...">
+      <div class="caption">
+        <h3>眼中</h3>
+        <p>大家应该都有一些回忆，不管是好的回忆还是坏的回忆，都是回忆。这些回忆我选择使用照相机记录下来，把照下的回忆变一本童年回忆的书，所以对构图的训练是我们拍好风光摄影的重点这样应该是把回忆留下来一张照片可以把一个人带进一个奇幻的过去，想着当时的心情，当时的事情，当时的风景。</p>
+        <p><a href="#" class="btn btn-primary" role="button">收藏</a> <a href="#" class="btn btn-default" role="button">点赞</a></p>
+      </div>
+    </div>
+  </div>
+
+   <div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="image/6.jpeg" alt="...">
+      <div class="caption">
+        <h3>心情</h3>
+        <p>摄影是光与影的艺术品，要有合适的时间才能有合适的光线，有了合适的光线才能拍出好的摄影作品。风光摄影的时间则比较适合早晨或者傍晚时分。地点对拍摄风光摄影尤为重要。当然，想拍出漂亮的风光作品首当其冲要选好拍摄地点。以上时间、地点都是外界因素，我们不能左右于它。</p>
+        <p><a href="#" class="btn btn-primary" role="button">收藏</a> <a href="#" class="btn btn-default" role="button">点赞</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul class="media-list">
+  <li class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="image/8.jpg" alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">达达曼雷 Man Ray 美国 1890-1976 </h4>
+      
+    达达主义的奠基人，先锋摄影大师，诗人，雕塑家，超现实主义电影的开创者。他还是有史以来第一个摄影作品价值远远超越其它艺术形式的艺术家。 
+1911年起从事绘画和雕刻创作，作为美国第一批抽象画家之一，曾和当时欧洲的前卫艺术家频繁接触。1915年开始摄影艺术。他主张对艺术形式进行探索和创新，反对对旧有形式和主题的模仿与重复。曾以一种轻松的游戏心态来进行摄影实验，发明了中途曝光、物影照片等技法，被后人称为“雷照片”。这些探索除了在语言技法上别开生面以外，在观念上也非常切合达达主义与超现实主义的反艺术精神。
+    </div>
+  </li>
+</ul>
+
+
+<ul class="media-list">
+  <li class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="image/9.jpg" alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">尤金.阿杰 Eugene Atget 法国 1857-1927 </h4>
+       
+    曾当过演员，学习过绘画，但都没有成功。直到40岁才开始从事摄影，1899年成为一名摄影师。他的摄影风格独特，不喜欢拍摄正规的人物肖像，而擅长拍摄街头的人物。他用7乘9.5英寸底版的木制相机，在巴黎拍了30年，完成《旧巴黎的艺术》1053张照片、《独特的巴黎》1568张照片，两部宏大的专题摄影集。1927年在贫困中默默无闻地死去。他所拍摄的大量作品，奠定了他“法国纪实摄影之父”的地位。     尤金 . 阿杰是一位对曼 . 雷影响很大的摄影家，同时又是一位充满矛盾的摄影家。一方面，他在摄影史上被视作纪实摄影师；另一方面，他的很多作品中又具有构成主义的特征，强调历史与对地点的尊重。同时，他的摄影画面充满神秘色彩，又常常被划入超现实主义范畴。
+    </div>
+  </li>
+</ul>
+
+
+<ul class="media-list">
+  <li class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="image/10.jpg" alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">久拉.阿拉兹.布拉塞 Gyula Halasz Brassai 法国 1899-1984 </h4>
+      
+    20世纪最重要的摄影家之一，于上世纪30年代初就奠定了不可动摇的摄影大师地位。20年代，他经常光顾康定斯基等艺术家常去的地方。 
+    他于1933年出版的画册《巴黎之夜》轰动一时，被著名作家亨利 . 米勒称为“巴黎之眼”。他说：“摄影带给我们的是什么呢？是一口新鲜的空气，一股强烈的现实味道，它给予事物的几乎是一种实体的表现。” 除了内容的轰动以外，夜景的摄影技术也是让布拉塞声名鹊起的原因之一。当时专业的摄影师都无法捕捉夜光下的动态画面。而布拉塞的夜景拍摄挑战了计划素的极限，因此他被称为夜间摄影的鼻祖。
+    </div>
+  </li>
+</ul>
+
+
+<ul class="media-list">
+  <li class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="image/11.jpg" alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">雅克-亨利.拉蒂格 Jacques-Henri Lartigue 法国 1894-1986 </h4>
+      
+    以拍摄其家庭和朋友的各种日常生活而自得其乐，他以引人注目的新鲜感记录了20世纪初美好时代的生活。 他从不拍摄摆布照片，而是将注意力集中于抓拍稍瞬即逝的瞬间。所拍照片不受任何人影响，仅仅供自己和家人欣赏，从而使其摄影日记成为真正意义上的“视觉日记”。一生保留了125本摄影日记。本在华尔街一家知名律师事务所工作，拥有高新、美丽的妻子和两个可爱的儿子。本最初的理想是成为一名职业摄影师，却只能整天替人写遗嘱。无意中，本发现妻子与一名当地摄影师盖瑞有染，竟失手杀死了盖瑞。
+甚至自己无路可退，本决定冒用死者盖瑞的身份逃往边远小镇。在这僻静的世界一角，本展开了全然不同的视野，也对人生价值有了深刻体认，然而，他企图逃避的过往阴影与真实身份，却仍暗地里如影随形……
+一成不变的生活，压缩了实现梦想的空间。于是，陌生的身份、全新的生活，反倒成了唯一可能的逃脱方式。以摄影之眼，看不同的人生风景。 美国知名国际畅销书作家，生于1955年，作品已被译成22种文字。婚姻的悲剧、工作的屈辱、做父母的愧疚，他书中的主题总是贴近人心，这使得他的作品不论是黑色惊悚小说，还是成人爱情故事，都大获成功。
+肯尼迪的作品摆满书店的书架，同时，好莱坞代理人也人手一本。他的小说获得各国电影导演的青睐，其中，由《摄影师》改编的电影《全局》，由法国王牌影星凯瑟琳·德纳芙主演，于 2011年第八届法国影展期间在中国四个城市巡回展演，受到中国年轻人的喜爱。
+
+
+    </div>
+  </li>
+</ul>
+
+
+<ul class="media-list">
+  <li class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="image/12.jpg" alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">安德烈.柯特兹 Andre Kertesz 匈牙利 1894-1985</h4>
+      
+         作为现代摄影的一个拓荒者，柯特兹的照片与人生姿态一直给全世界的摄影家带来回味无穷的启示。各种截然不同的表现手法都可以在他的作品中找到影子。 柯特兹的每张照片都充分显示了艺术与生活融合一体的境界。他喜用多变的几何形态来结构画面弥补着痕迹地通过各种形态的交相辉映，强化光影的神秘效果，在人们的心中引发一种微妙、丰富的心理感受。布拉塞曾说：“柯特兹有着对伟大的摄影家来说必不可少的两个资质：即对这个世界、人与生命体的不倦的好奇心和精致的造型感觉。”1994年毕业于山西阳泉工业学校工艺美术系，1994年居住北京至今。现为hihey签约艺术家，英国皇家摄影学会会员，纽约摄影学会会员。曾就职于国际4a广告公司智威汤逊（JWT）、达彼思Bates 、 三星samsung广告及dmg娱乐传媒任职艺术总监，所获奖项包括MOBIUS AWARDS美国莫比广告银奖，伦敦广告入围奖，欧洲ABBE入围奖，多次获中国广告节金银奖，中国汽车广告奖金银奖。作品多次入选 《ARCHIVE广告档案》《创意情报Greative information》《CAMPAIGNBRIEF意》《adsoftheworld》。2012年开始艺术摄影创作，当年即获得了第21届奥地利特伦伯超级摄影巡回展金牌，第30届马来西亚国际摄影展psm银牌，第40届纽约摄影学会国际展PSA银牌。并于2012第一次于平遥国际摄影节举行个展（欲望与毁灭），2014签约中国最大的艺术电商hiher,2014年12月于北京当代moma举行观念人体摄影个展（镜像）
+    </div>
+  </li>
+</ul>
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="image/7.png" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">加入我们</h4>
+    摄影秉承“专于形、精于心”的理念，行成了鲜明的服务优势，并努力为客户创造完善，优质的服务，缔造行业的强势品牌。  联系电话：123456789012
+  </div>
+</div>
+</div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </body>
+  <script>
+    //判断IE
+    function isIE(){
+        var b = document.createElement('b');
+        b.innerHTML = '<!--[if lte IE 8]><i></i><![endif]-->';
+        return b.getElementsByTagName('i').length === 1;
+    };
+    //定义雪花
+    function CreateSnow(snowBox,src,style){
+      this.snowBox = document.getElementById(snowBox);//找到容器
+      this.snowStyle = Math.ceil(Math.random()*style);//雪花类型[1,2]
+      this.maxLeft = this.snowBox.offsetWidth-Math.random()*5+3;//运动范围
+      this.maxTop = this.snowBox.offsetHeight-Math.random()*5+3;
+      this.left = this.snowBox.offsetWidth*Math.random();//起始位置
+      this.top = this.snowBox.offsetHeight*Math.random();
+      this.angle=1.1+0.8*Math.random();//飘落角度
+      this.minAngle=1.1;
+      this.maxAngle=1.9;
+      this.angleDelta=0.01*Math.random();
+      this.speed=1.4+Math.random();//下落速度
+      this.createEle(src);//制作雪花dom   凹=放在最后，使得原型里能取到值
+    };
+    //雪片生成+下落
+    CreateSnow.prototype = {
+      createEle : function(baseSrc){//生成雪花元素
+        var srcIndex = baseSrc.lastIndexOf('.'),//获取最后一个'.'
+          src = baseSrc.substring(0,srcIndex)+this.snowStyle+baseSrc.substring(srcIndex,baseSrc.length);
+        var image = new Image();
+          image.src = src;
+        this.ele = document.createElement("img");
+        this.ele.setAttribute('src',src);
+        this.ele.style.position="absolute";
+        this.ele.style.zIndex="99";
+        this.snowBox.appendChild(this.ele);
+        //设置雪花尺寸
+        var img = this.ele;
+        image.onload = function(){
+          imgW = image.width;
+          img.setAttribute('width',Math.ceil(imgW*(0.1+Math.random())));
+          if(isIE()){//如果旧IE，设置高度
+            imgH = image.height;
+            img.setAttribute('height',Math.ceil(imgH*(0.1+Math.random())));
+          }
+        };
+      },
+      move : function(){//雪花运动
+        if(this.angle< this.minAngle||this.angle>this.maxAngle){
+            this.angleDelta=-this.angleDelta;
+        }
+        this.angle+=this.angleDelta;
+        this.left+=this.speed*Math.cos(this.angle*Math.PI);
+        this.top-=this.speed*Math.sin(this.angle*Math.PI);
+        if(this.left<0){
+            this.left=this.maxLeft;
+        }else if(this.left>this.maxLeft){
+            this.left=0
+        }
+        if(this.top>this.maxTop){//雪花掉出来后回到顶部
+            this.top=0;
+        }
+        this.ele.style.left=this.left+'px';//凹=加‘px’
+        this.ele.style.top=this.top+'px';
+      }
+    };
+    //下雪启动
+    function goSnow(snowBox,src,num,style){
+      var snowArr = [];
+      for(var j = 0 ; j<num ; j++){
+        snowArr.push(new CreateSnow(snowBox,src,style));
+      }
+      var makeSnowtime = setInterval(function(){
+        for(var i = snowArr.length-1;i>=0;i--){//找到数组中的最新的一个
+          if(snowArr[i]){
+            snowArr[i].move();
+          }
+        }
+      },40);
+    };
+    //初始化加载
+    window.onload = function(){
+      var snowBox = 'snowBox',//雪花容器
+        src = './img/snow.png',//雪花图基本命名<图片名就是snow+1/2/3/4...>
+        num = 16,//雪花数量
+        style = 2;//图片种类数
+      goSnow(snowBox,src,num,style);
+    };
+  </script>
+  <script type="text/javascript">
+  var deng = document.getElementById('deng');
+  var login= document.getElementById('login');
+  var user= document.getElementById('user');
+  var pass= document.getElementById('pass');
+  var d= document.getElementById('d');
+  var z= document.getElementById('z');
+  var s = document.getElementById('close');
+
+
+  // login.onclick = function () {
+  //   deng.style.display="block";
+  // }
+
+  // user.onfocus = function(){
+  //   this.value = "";
+  // }
+
+  // user.onblur = function(){
+  //   if(this.value == ""){
+  //     user.value = "❌用户名不能为空";
+  //     uesr.value.color="red";
+  //     user.className = 'error';
+  //   }else{
+  //     user.value = "✅ 正确";
+  //     user.className = "right";
+  //   }
+  // }
+
+  //  pass.onfocus = function(){
+  //   this.value = "";
+  // }
+
+  // pass.onblur = function(){
+  //   if(this.value == ""){
+  //     pass.value = "❌ 密码不能为空";
+  //     pass.className = 'error';
+  //   }else{
+  //     pass.value = "✅ 正确";
+  //     pass.className = "right";
+  //   }
+  // }
+  // d.onclick = function () {
+
+  //   deng.innerHTML = "登录成功,右上角关闭"
+  //   deng.style.height="100px";
+  //   deng.style.color="white";
+  //   deng.style.lineHeight="100px";
+  //   deng.style.fontSize="15px";
+  //   var span = document.createElement("span");
+  //   span.innerHTML="❌";
+  //   span.style.position="absolute";
+  //   span.style.left="270px";
+  //   span.style.top="0px";
+  //   span.style.cursor="pointer";
+  //   deng.appendChild(span);
+  //   span.onclick = function () {
+  //     deng.style.display="none";
+  //   }
+  // }
+
+  // z.onclick = function () {
+  //   var s1 = document.createElement("span");
+  //   s1.innerHTML="注册成功请登录"
+  //   s1.style.position="absolute";
+  //   s1.style.left="10px";
+  //   s1.style.top="180px";
+  //   s1.style.color="white";
+  //   deng.appendChild(s1);
+  // }
+// close.onclick = function () {
+//   deng.style.display="none";
+// }
+  </script>
+</html>

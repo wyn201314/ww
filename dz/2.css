@@ -1,0 +1,263 @@
+* {
+        margin-top: 0px;
+        padding: 0px;
+    }
+        #header {
+        width: 100%;
+        height: 70px;
+        background-color: #2c323a;
+    }
+    .logo {
+        float: left;
+        margin-left: 80px;
+        margin-top:20px;
+
+    }
+ 
+
+    .topNav{
+    position: absolute;
+    top: 30px;
+    left: 750px;
+}
+.topNav ul li{
+    float:left;
+    margin-left: 30px;
+    font-weight: bold;
+    color: black;
+    list-style-type: none;
+}
+.topNav ul li a {
+    font-size: 17px;
+
+    color: white;
+    text-decoration: none;
+}
+.topNav ul li a:hover{
+    color: #0991db;
+}
+.span {
+    position: absolute;
+    left: 330px;
+    top: 0px;
+}
+#he-btn button {
+    width: 50px;
+    height: 30px;
+    margin-left: 750px;
+    margin-top: 20px;
+}
+#he-btn button a {
+    text-decoration: none;
+    font-size: 12px;
+
+}
+#lo a {
+    color: white;
+}
+#lo {
+    position: absolute;
+    left: 380px;
+    border: 1px solid lightgray;
+    
+    background-color: #0991db;
+
+}
+#lo:hover {
+    border: 2px solid #0991db;
+}
+#zh a {
+    color: gray;
+}
+#zh {
+    position: absolute;
+    left: 435px;
+    border: 1px solid lightgray;
+    background-color: white;
+    color: gray;
+}
+#zh:hover {
+    border: 2px solid #0991db;
+}
+
+
+/*--------------------------*/
+#div {
+    width: 100%;
+    height: 600px;
+    background-image: url("img/b.jpg");
+    background-repeat: no-repeat;
+
+}
+	.w{
+		position: relative;
+        left: 400px;
+        top: 20px;
+
+	}
+    .input-tip {
+        height: 25px;
+    }
+    .form-item {
+        border:1px solid lightgray;
+        width: 450px;
+        height: 50px;
+        color: gray;
+        
+    }
+    .user label {
+        position: absolute;
+        left: 30px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+    .user input {
+        outline-style: none;
+        position: absolute;
+        top: 1px;
+        left: 150px;
+        opacity: 0.5;
+
+        border: 1px solid white;
+        width: 298px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .pass label {
+        line-height: 50px;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .pass input {
+        outline-style: none;
+        opacity: 0.5;
+
+        position: absolute;
+        top: 81px;
+        margin-left: 30px;
+        border: 1px solid white;
+        width: 298px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .sur-pass label {
+        line-height: 50px;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .sur-pass input {
+        outline-style: none;
+        opacity: 0.5;
+
+        position: absolute;
+        top: 156px;
+        margin-left: 30px;
+        border: 1px solid white;
+        width: 298px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .email label {
+        line-height: 50px;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .email input {
+        outline-style: none;
+        opacity: 0.5;
+
+        position: absolute;
+        top: 235px;
+        margin-left: 30px;
+        border: 1px solid white;
+        width: 298px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .phone label {
+        line-height: 50px;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .phone input {
+        outline-style: none;
+        opacity: 0.5;
+
+        position: absolute;
+        top: 310px;
+        margin-left: 30px;
+        border: 1px solid white;
+        border-left: 1px solid lightgray;
+        width: 298px;
+        height: 45px;
+        font-size: 16px;
+    }
+     .yan label {
+        line-height: 50px;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .yan input {
+        outline-style: none;
+        opacity: 0.5;
+
+        position: absolute;
+        top: 387px;
+        margin-left: 20px;
+        border: 1px solid white;
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .yan img {
+        position: absolute;
+        left: 350px;
+    }
+    .pho-yan label {
+        line-height: 50px;
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .pho-yan input {
+        outline-style: none;
+        opacity: 0.5;
+
+        position: absolute;
+        top: 466px;
+        margin-left: 20px;
+        border: 1px solid white;
+        width: 200px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .pho-yan button {
+        position: absolute;
+        left: 350px;
+        width: 100px;
+        height: 45px;
+        margin-top:2px;
+        background-color: #f2f2f2;
+        border: 1px solid white;
+        font-size: 14px;
+    }
+    #lj {
+        width: 450px;
+        height: 50px;
+        background-color: #0991db;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    #lj a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;  
+    }
+    #lj:hover {
+        border: 2px solid #0991db;
+    }
+    #s1,#s2,#s3,#s4,#s5,#s6{
+        font-size: 7px;
+        color: gray;
+        margin-left: 30px;
+        display: none;
+    }

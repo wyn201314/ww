@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="3.css">
+    <style type="text/css">
+  #header {
+    width: 100%;
+    height: 70px;
+  }
+  .logo {
+    float: left;
+    margin-left: 80px;
+    margin-top:20px;
+
+  }
+  #inp {
+    width: 270px;
+    height: 30px;
+    margin-left: 70px;
+    margin-top: 25px;
+  }
+  .search {
+    height: 80px;
+    float: left;
+  }
+
+  .topNav{
+  position: absolute;
+  top: 30px;
+  left: 750px;
+}
+.topNav ul li{
+    float:left;
+    margin-left: 30px;
+    font-weight: bold;
+    color: black;
+    list-style-type: none;
+}
+.topNav ul li a {
+    font-size: 17px;
+
+  color: gray;
+  text-decoration: none;
+}
+.topNav ul li a:hover{
+  color: #0991db;
+}
+.span {
+  position: absolute;
+  left: 340px;
+  top: 16px;
+}
+#he-btn button {
+  width: 50px;
+  height: 30px;
+  margin-left: 750px;
+  margin-top: 35px;
+}
+#he-btn button a {
+  text-decoration: none;
+  font-size: 12px;
+
+}
+#lo a {
+  color: white;
+}
+#lo {
+  position: absolute;
+  left: 380px;
+  border: 1px solid lightgray;
+  
+  background-color: #0991db;
+
+}
+#lo:hover {
+  border: 2px solid #0991db;
+}
+#zh a {
+  color: gray;
+}
+#zh {
+  position: absolute;
+  left: 435px;
+  border: 1px solid lightgray;
+  background-color: white;
+  color: gray;
+}
+#zh:hover {
+  border: 2px solid #0991db;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+            <h1 class="logo"><a  href="../index.html"><img src="7.png" alt=""></a></h1>
+            <div class="search">
+             <!-- <form action="datadeal.php"> -->
+        <input type="text" id="inp" placeholder="摄影作品">
+      <!-- </form> -->
+      </div>
+                <div class="topNav">
+                <ul>
+                    <li><a  href="#">客服中心</a></li>
+                    <li><a  href="#">招贤纳士</a></li>
+                    <li><a  href="#">会员中心 </a></li>
+                </ul>
+                  <span class="span">|</span>
+
+            </div>
+            <div id="he-btn">
+              <button id="lo"><a href="login.html">登录</a></button>
+                <button id="zh"><a href="register.html">注册</a></button>
+            </div>
+    <!-- </div> -->
+    <!-- </div> -->
+	<div class="w">
+
+        
+            <form action="index1.php" id="register-form" method="post">
+
+                <div class="form-item user" >
+                    <label> 用 户 名 : </label>
+                    <input type="text" name="username" maxlength="20" placeholder="邮箱/用户名/已验证手机" >
+                    </div>
+
+                <div class="input-tip">
+                    <span></span>
+                </div>
+
+                <div class="form-item pass">
+                    <label> 密  码 : </label>
+                    <input type="password" name="password" maxlength="20" placeholder="密码" >
+                     </div>
+            
+          <span id="z"><a href="register.html">立即注册</a></span>
+          <span id="wang"><a href="#">忘记密码</a></span>
+          <div class="input-tip">
+                    <span></span>
+                </div>
+                    <button id="lj" name="submit"><a href="#">登&nbsp;&nbsp;&nbsp;录</a></button>
+</form>
+      </div>
+      </div>
+</body>
+</html>

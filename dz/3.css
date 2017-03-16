@@ -1,0 +1,224 @@
+* {
+        margin-top: 0px;
+        padding: 0px;
+    }
+    #box {
+        width: 100%;
+        height: 700px;
+        /*background-color: #f2f2f2;*/
+        background-image: url("img/b2.jpg");
+        background-repeat: no-repeat;
+        position: relative;
+        left: 0px;
+     
+    }
+        #header {
+        width: 100%;
+        height: 70px;
+        background-color: #2c323a;
+    }
+    .logo {
+        float: left;
+        margin-left: 80px;
+        margin-top:20px;
+
+    }
+ 
+
+    .topNav{
+    position: absolute;
+    top: 30px;
+    left: 750px;
+}
+.topNav ul li{
+    float:left;
+    margin-left: 30px;
+    font-weight: bold;
+    color: black;
+    list-style-type: none;
+}
+.topNav ul li a {
+    font-size: 17px;
+
+    color: white;
+    text-decoration: none;
+}
+.topNav ul li a:hover{
+    color: #0991db;
+}
+.span {
+    position: absolute;
+    left: 330px;
+    top: 0px;
+}
+#he-btn button {
+    width: 50px;
+    height: 30px;
+    margin-left: 750px;
+    margin-top: 20px;
+}
+#he-btn button a {
+    text-decoration: none;
+    font-size: 12px;
+
+}
+#lo a {
+    color: white;
+}
+#lo {
+    position: absolute;
+    left: 380px;
+    border: 1px solid lightgray;
+    
+    background-color: #0991db;
+
+}
+#lo:hover {
+    border: 2px solid #0991db;
+}
+#zh a {
+    color: gray;
+}
+#zh {
+    position: absolute;
+    left: 435px;
+    border: 1px solid lightgray;
+    background-color: white;
+    color: gray;
+}
+#zh:hover {
+    border: 2px solid #0991db;
+}
+
+
+/*--------------------------*/
+	.w{
+		position: relative;
+        left: 450px;
+        top: 150px;
+	}
+    .input-tip {
+        height: 25px;
+    }
+    .form-item {
+        border:1px solid lightgray;
+        width: 350px;
+        height: 50px;
+        color: gray;
+        
+    }
+    .user label {
+        position: absolute;
+        left: 30px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+    .user input {
+        outline-style: none;
+        position: absolute;
+        top: 1px;
+        left: 120px;
+        opacity: 0.5;
+
+        border: 1px solid white;
+        border-left: 1px solid lightgray;
+
+        width: 198px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .pass label {
+        line-height: 50px;
+        margin-left: 0px;
+        font-size: 18px;
+        position: absolute;
+        /*top: 81px;*/
+        left: 35px;
+    }
+    .pass input {
+        outline-style: none;
+        opacity: 0.5;
+        position: absolute;
+        top: 81px;
+        left: 100px;
+        margin-left: 20px;
+        border: 1px solid white;
+        border-left: 1px solid lightgray;
+        width: 198px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .w a{
+        color: #0991db;
+        text-decoration: none;
+    }
+    #wang {
+        position: absolute;
+        left: 300px;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    #z {
+        position: absolute;
+        left: 200px;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    #deng {
+        width: 400px;
+        height: 60px;
+        position: absolute;
+        left: 428px;
+        top: 60px;
+        border-bottom: 1px solid lightgray;
+    }
+    #deng a {
+        color: #0991db;
+        text-decoration: none;
+    }
+    #deng span {
+        position: absolute;
+        left: 200px;
+        top: 20px;
+        color: lightgray;
+    }
+    #sao {
+        width: 200px;
+        text-align: center;
+        position: absolute;
+        top: 20px;
+    }
+#sao a {
+        color: #0991db;
+        font-size: 18px;
+
+}
+    #zhang {
+        width: 160px;
+        height: 60px;
+        position: absolute;
+        left: 250px;
+
+        top: 20px;
+    }
+    #zhang a {
+        color: red;
+        font-size: 20px;
+    }
+    #lj {
+        width: 350px;
+        height: 50px;
+        background-color: tomato;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-left: 5px;
+    }
+    #lj a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;  
+    }
+    #lj:hover {
+        border: 2px solid #0991db;
+    }
